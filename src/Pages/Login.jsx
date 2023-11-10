@@ -1,6 +1,5 @@
 import React from 'react'
 import './Login.css'
-
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -23,7 +22,7 @@ const Login = () => {
 
 
     
-    const welcome = ' PECS (Prepaid Electricity Consumption System)'
+    const welcome = ' Login'
 
 
 
@@ -31,13 +30,15 @@ const Login = () => {
   return (
 
     <div className='Logins'>
-         
+         <section className='section2'>
         <div className='formHolder'>
             <h1 className='welcome'>{welcome}</h1>
             
 
             <form  className='formm' onSubmit={handleSubmit}>
             
+                
+
                 <label>Email</label><br></br>
                 <input placeholder='Input your Email' type='email' name='email' onChange={e => setEmail(e.target.value)} >
                 </input>
@@ -46,13 +47,13 @@ const Login = () => {
                 <input placeholder='Input your password' type='password' name='password' onChange={e => setPassword(e.target.value)} >
                 </input>
                 <p className='warning'>{}</p>
-                <button type='submit'><p>Submit</p></button>
-                <p>Input your email and password to sign into your account.</p>
-                <p>Don't have an account?<Link to='/Create'>Signup</Link> </p>
+                <Link to='/dash'><button type='submit'><p>Login</p></button></Link>
+                {/* <p>Input your email and password to sign into your account.</p> */}
+                <p className='last1'>Don't have an account?<Link to='/Create'> Signup</Link> </p>
             </form> 
            
         </div>
-       
+        </section>
        
     </div>
 

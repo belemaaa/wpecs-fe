@@ -1,20 +1,40 @@
+
 import React from 'react'
 import './LandingPage.css'
 import Home from './Home'
+import { Link } from 'react-router-dom'
+
 const LandingPage = () => {
 
+
+  
   
 
 
   return (
 
     <div className='LandingPage'>
+        <div className='landinginfo'>
+          
+        <h1>AmpSmart Solutions</h1>
+        
+        </div>
 
-        <h1>Shallipopi who go mount us</h1>
+        <div className='holster'>
+          <h1>Information them things</h1>
+          
+          <div className='moreInfo'>
+          </div>
 
         <div className='buttonHolder'>
-            <button className='button1'>Login</button>
-            <button className='button2 '> Sign up</button>
+           <Link to='/Create'> <button> Get Started </button></Link>
+
+        </div>
+
+
+        </div>
+
+        <div className=''>
 
         </div>
 

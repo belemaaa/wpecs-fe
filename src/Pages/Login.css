@@ -4,32 +4,46 @@
     margin: auto;
     
 }
+
+.section2{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .formm{
     margin: auto;
-    height: 60vh;
+    height: 50vh;
+    width: 30vw;
+    padding-top: 4vh;
+    box-sizing: border-box;
     align-content: center;
     text-align: center;
     box-shadow: 1vh 2vh 3vh grey;
 }
 .formm input{
     margin: auto;
-    width: 50vw;
-    height: 8vh;
-    border-radius: 20vh;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 2vh;
     padding-left: 4vh;
     box-sizing: border-box;
 }
 .formm label{
     margin: auto;
-    font-size: 5vh;
+    font-size: 3vh;
     text-decoration: solid;
 }
 .formm button{
-    width: 10vw;
-    border-radius: 40vh;
-    background-color: purple;
+    width: 8vw;
+    align-items: center;
+    text-align: center;
+    border-radius: 10vh;
+    background-color: #008080;
     border: none;
-    font-size: 3vh;
+    font-size: 2vh;
     text-decoration: solid;
     color: white;
 }
@@ -40,5 +54,11 @@
 .welcome{
     text-align: center;
     font-size: 6vh;
-    color: purple;
+    color: #008080;
+}
+
+
+a {
+    text-decoration: #008080;
+    color: #008080;
 }

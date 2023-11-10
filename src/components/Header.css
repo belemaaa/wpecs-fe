@@ -1,0 +1,32 @@
+.headerLinks{
+    width: 40vw;
+    height: 8vh;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    /* background-color: white; */
+    font-size: 4vh;
+    padding-top: 2vh;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 4vw;
+    /* margin-bottom: 5vh; */
+}
+
+.headerLinks ul{
+    display: inline;
+    text-decoration: none;
+    margin: auto;
+    height: 5vh;
+    width: 10vw;
+}
+
+.headerLinks li{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    margin: 2vw;
+    border-radius: 0.2vw;
+
+}

@@ -1,0 +1,42 @@
+.form2holder{
+    margin: auto;
+    height: 90vh;
+    width: 80vh;
+}
+
+.form2{
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    box-shadow: 1px 2px 3px grey;
+
+}
+
+.form2 label{
+    margin: auto;
+    text-align: center; 
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.form2 input{
+    padding-left: 4vh;
+    width: 68vw;
+    height: 7vh;
+    margin: auto;
+    border-radius: 40vh;
+    box-sizing: border-box;
+    border: 1px 1px 1px lightgrey;
+}
+.form2 button{
+    width: 30vw;
+    height: 9vh;
+    border-radius: 30vh;
+    margin-top: 5vh;
+    background-color: purple;
+    font-size: 5vh;
+    color: white;
+    border: none;
+}

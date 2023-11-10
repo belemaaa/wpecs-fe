@@ -1,0 +1,44 @@
+.formHolder{
+    width: 75vw;
+    height: 90vh;
+    margin: auto;
+    
+}
+.formm{
+    margin: auto;
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+    box-shadow: 1vh 2vh 3vh grey;
+}
+.formm input{
+    margin: auto;
+    width: 50vw;
+    height: 8vh;
+    border-radius: 20vh;
+    padding-left: 4vh;
+    box-sizing: border-box;
+}
+.formm label{
+    margin: auto;
+    font-size: 5vh;
+    text-decoration: solid;
+}
+.formm button{
+    width: 10vw;
+    border-radius: 40vh;
+    background-color: purple;
+    border: none;
+    font-size: 3vh;
+    text-decoration: solid;
+    color: white;
+}
+.warning{
+    color: red;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 6vh;
+    color: purple;
+}

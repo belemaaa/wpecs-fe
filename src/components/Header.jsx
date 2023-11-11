@@ -11,7 +11,7 @@ const Header = () => {
       <div className='headerLinks'>
           <ul>
           <Link to='/dash'>  <li> Home </li></Link>
-           <Link to='/ElectricityPlan'> <li>Electricity Plan</li></Link>
+           <Link to='/ElectricityPlan'> <li>P.A.P</li></Link>
            <Link to='/Pin'> <li>Pin</li></Link>
            
           </ul>

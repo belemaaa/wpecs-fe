@@ -8,11 +8,12 @@
 
 .dashboard{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     /* background-color: #00AB66; */
     background-image: linear-gradient(to left, green , lightgreen);
     text-align: center;
     padding-left: 5vw;
+    padding-bottom: 5vh;
 }
 
 .contents{
@@ -35,3 +36,8 @@
     text-align: left;
     margin-left: 5vw;
 }
+
+/* .dashboard p{
+    font-size: 5vh;
+    font-weight: bold;
+} */

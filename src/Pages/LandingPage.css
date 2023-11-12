@@ -1,45 +1,99 @@
-.LandingPage{
+body {
+    width: 100%;
+    height: auto;
+    background-color: #feefe5;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.LandingPage {
     margin: auto;
     /* text-align: center; */
 }
-.landinginfo{
-    width: 60vw;
-    height: 5vh;
-    margin-bottom: 5vh;
+
+.landinginfo {
+    width: 97vw;
+    height: 11vh;
+    /* margin-bottom: 5vh; */
     padding-left: 3vw;
-    color: darkgreen;
+    color: white;
+    /* background-color:  #1db954; */
+    background-color: teal;
+    /* background-image: url('../images/t7.jpg'); */
+    color: white;
+
+
+
+}
+
+.holster {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    object-fit: fill;
+    background-image: url('../images/nobg.png');
+    background-repeat: no-repeat;
+
+}
+
+.holster h1{
+    float: right;
+    margin-right: 6vw;
     
 }
-.holster{
-    width: 100vw;
-    height: 90vh;
-    margin: auto;
-    background-color: #128f6a;
-    /* background-image: url('./tl.png') ; */
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    text-align: center;
-}
-.buttonHolder{
+
+.buttonHolder {
     width: 20vw;
-    height: 7vh;
+    height: auto;
     /* background-color: white; */
     margin: auto;
     display: flex;
 }
-.buttonHolder button{
+
+.buttonHolder button {
     width: 16vw;
     height: 7vh;
-    background-color: white;
+    background-color: teal;
     border-radius: 10vw;
     border: none;
     font-size: 3vh;
     margin: auto;
+    color: white;
+    margin-top: 15vh;
 }
-.moreInfo{
+
+.moreInfo {
     width: 80vw;
     height: 60vh;
     /* background-color: red; */
     margin: auto;
-    /* background-image: url('./tl.png'); */
+    /* background-image: url('../images/t4.jpg'); */
+    object-fit: contain;
+    box-sizing: border-box;
 }
+
+/* .persons{
+    width: 90vw;
+    height: auto;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.personholder {
+    width: 15vw;
+    height: 30vh;
+    padding: 3vh;
+    border-radius: 1vw;
+    background-color: teal;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: .3s ease-out;
+    color: white;
+
+}
+
+.personholder:hover{
+    width: 18vw;
+    height: 32vh;
+    transition: .3s ease-out;
+} */

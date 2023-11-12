@@ -7,41 +7,79 @@ import Header from '../components/Header'
 import Login from './Login'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LandingPage from './LandingPage'
+import {CircularProgressbar, buildStyles} from 'react-circular-progressbar';
+import { useLocation } from 'react-router-dom'
 
 
 
 
 const Home = () => {
+
+  const location = useLocation();
+  const value = location.state ? location.value.state : 110;
+  
+
+
   return (
 
     <div className='UserPage'>
-        
-        <div className='dashboard'>
-          <Header />
-          
-          {/* <svg className='svg1' xmlns="http://www.w3.org/2000/svg" width="15vw" height="15vh" viewBox="0 0 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><br></br>  */}
 
-          <h2>Dashboard</h2>
+      <div className='dashboard'>
+        <Header />
 
+        <h2>Dashboard</h2>
 
-          <div className='contents'>
+        <div className='flexContainer'>
 
-            <h3>User Information</h3>
+          <div className='flex0'>
+          <CircularProgressbar 
+          className='progressbar'
+          value={value}
+          maxValue={200}
+          text={`${value/2}%`}
+          styles={buildStyles({
+            pathColor: `rgba(62, 152, 199, ${value / 100})`,
+            textColor: 'white',
+            trailColor: '#d6d6d6',
+            strokeLinecap: 'round',
+            pathTransitionDuration: '0.5'
+          })}
+        />
+
+        <h3>You have {value/2} Credits left</h3>
+          </div>
+
+          <div className='flex1'>
+
             
-             <p>Username</p>
-             <p>Email</p>
-             <p>Credits left</p>
-             <p>Active plan</p>
-            
+
+          </div>
+
+          <div className='flex2'>
+
+          </div>
+
+          <div className='flex3'>
+
+          </div>
+
+          <div className='flex4'>
+
+          </div>
+
+          <div className='flex5'>
+
+          </div>
+
+         </div>
 
         </div>
-        </div>
-        
-        
-    </div>
-  )
+
+
+      </div>
+      )
 }
 
-export default Home
+      export default Home

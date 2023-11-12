@@ -10,34 +10,80 @@
     width: 100vw;
     height: auto;
     /* background-color: #00AB66; */
-    background-image: linear-gradient(to left, green , lightgreen);
-    text-align: center;
+    /* background-image: linear-gradient(to left, green , lightgreen); */
+    /* text-align: center; */
     padding-left: 5vw;
     padding-bottom: 5vh;
 }
 
-.contents{
-    width: 27vw;
-    height: 70vh;
-    background-color: white;
-    border-radius: 2.5vw;
-    float: left;
-    font-size: 4vh;
-    text-align: center;
-
+.dashboard h2{
+    color: teal;
+    font-size: 6.5vh;
 }
 
-
-
-.contents p{
-    display: list-item;
-    list-style-type: none;
-    font-size: 4vh;
-    text-align: left;
-    margin-left: 5vw;
-}
 
 /* .dashboard p{
     font-size: 5vh;
     font-weight: bold;
 } */
+
+.flexContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 7vh 3vw;
+    float: right;
+    margin-right: 5vw;
+}
+
+.flexContainer div{
+    box-sizing: border-box;
+    height: auto;
+    padding: 5vh;
+    text-align: center;
+}
+
+.flex0{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+}
+
+.progressbar{
+    
+}
+
+.flex1{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+}
+
+.flex2{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+}
+
+.flex3{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+}
+
+.flex4{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+}
+
+.flex5{
+    width: 20vw;
+    height: 30vh;
+    background-color: teal;
+    border-radius: 2vw;
+} 

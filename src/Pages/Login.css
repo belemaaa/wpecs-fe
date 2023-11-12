@@ -28,6 +28,7 @@
     width: 15vw;
     height: 6vh;
     border-radius: 2vh;
+    border: 1px white;
     padding-left: 4vh;
     box-sizing: border-box;
 }

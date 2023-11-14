@@ -6,6 +6,23 @@
 }
 
 
+.sidebar{
+    float: left;
+    width: 17vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: teal;
+    text-align: center;
+    /* color: white; */
+}
+
+.sidebar p{
+    color: white;
+    /* font-size: 1.8vw; */
+    text-align: left;
+    margin-left: 2vw;
+}
+
 .dashboard{
     width: 100vw;
     height: auto;
@@ -50,7 +67,7 @@
 }
 
 .progressbar{
-    
+
 }
 
 .flex1{

@@ -6,6 +6,7 @@ import ElectricityPlan from './Pages/ElectricityPlan'
 import Pin from './Pages/Pin';
 import Login from './Pages/Login';
 import Create from './Pages/Create';
+import Payment from './components/Payment';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
     
       <Route path='/dash' element={<Home />}>
       </Route> 
+
+      <Route path='/payment' element={<Payment />}></Route>
 
      <Route path='Header' element={<Header />}> </Route>
 

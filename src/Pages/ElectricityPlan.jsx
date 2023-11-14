@@ -1,8 +1,7 @@
 import React from 'react'
 import './ElectricityPlan.css'
 import Header from '../components/Header'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 
 
@@ -12,6 +11,7 @@ const ElectricityPlan = () => {
   const [value, setValue] = useState('')
   const [currentCredits, setCurrentCredits] = useState(0)
   const [paymentSuccess, setPaymentSuccess] = useState(false)
+  const [pinValue, setPinValue] = useState(null)
 
 
   const Options = [
@@ -24,10 +24,23 @@ const ElectricityPlan = () => {
     setValue(e.target.value)
   }
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
     setCurrentCredits(prevCredits => prevCredits + Number(value));
+    setPaymentSuccess(true)
+    // setPinValue(data)
   };
+  
+
+  useEffect(() => {
+    fetch(' http://localhost:8000/records/1')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      setPinValue(data.pin);
+    })
+  },[])
 
   return (
 
@@ -47,6 +60,7 @@ const ElectricityPlan = () => {
           ))}
         </select>
             <p>Available Credits: {currentCredits}</p>
+           {pinValue && <p>Your generated pin is {pinValue}</p>}
       </div>
 
       <div className='paymentsystem'>
@@ -67,7 +81,9 @@ const ElectricityPlan = () => {
 
           <p>Amount to pay: {value} </p>
 
-          <button className='.paymentformbutton' type='submit'>Pay</button>
+          <button className='.paymentformbutton' type='submit' >Pay</button>
+
+          {paymentSuccess && <p style={{color: 'green'}}>Payment Successful</p>}
         </form>
       </div>
     </div>

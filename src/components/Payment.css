@@ -1,0 +1,36 @@
+.paydiv{
+    width: 98vw;
+    height: auto;
+}
+
+.payform{
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    /* background-color: teal; */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 12vw; */
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    border-radius: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    text-align: center;
+}
+
+.payform input{
+    width: 15vw;
+    height: 4vh;
+    text-align: center;
+    
+}
+
+.payform button{
+    width: 7vw;
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: 3vh;
+    border-radius: 0.5vw;
+}

@@ -9,7 +9,7 @@ const Create = () => {
         <section className='section1'>
           <form className='form2'>
           <i class="fi fi-tr-circle-user"></i>
-            <label className="formheader">  <h1>Create your account</h1> </label>
+            <label className="formheader">  <h1>Signup</h1> </label>
             <input placeholder='First name' type='text' >
             </input><br></br>
 

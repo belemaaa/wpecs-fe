@@ -19,6 +19,7 @@
     align-items: center;
     display: flex;
     font-size: 20px;
+    margin-bottom: 35px;
 }
 .form2{
     width: 40vw;
@@ -34,16 +35,19 @@
 .form2 input{
     padding-left: 13px;
     width: 20vw;
-    height: 6vh;
+    height: 7vh;
     margin: auto;
-    border-radius: 0.8vw;
+    border-radius: 10px;
     box-sizing: border-box;
-    border: 1px solid;  
+    border: 1px solid teal;  
     margin-bottom: 30px;
+    font-size: 17px;
+    letter-spacing: -0.3px;
 }
 .form2 input::placeholder{
     color: black;
     font-size: 15px;
+    letter-spacing: -0.3px;
 }
 .form2 button{
     width: 10vw;

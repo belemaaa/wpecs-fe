@@ -12,11 +12,7 @@ import LandingPage from './LandingPage'
 import {CircularProgressbar, buildStyles} from 'react-circular-progressbar';
 import { useLocation } from 'react-router-dom'
 
-
-
-
 const Home = () => {
-
   const location = useLocation();
   const value = location.state ? location.value.state : 110;
 

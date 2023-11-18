@@ -10,43 +10,22 @@ import Payment from './components/Payment';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
-  
-  
-
   return (
     <div className='holder'>
-    
-    <Router>
-        
-        
-    <Routes>
-    <Route path='/' element= {<LandingPage/>}></Route>
-    
-      <Route path='/dash' element={<Home />}>
-      </Route> 
+      <Router>    
+        <Routes>
+          <Route path='/' element= {<LandingPage/>}></Route>
+          <Route path='/dash' element={<Home />}></Route> 
+          <Route path='/payment' element={<Payment />}></Route>
+          <Route path='Header' element={<Header />}> </Route>
+          <Route path='/Login' element={<Login />}></Route>
+          <Route path='/Pin' element={<Pin />}></Route>
+          <Route path='/Create' element={<Create />}></Route>
+          <Route path='/ElectricityPlan' element={<ElectricityPlan />}></Route>
+          </Routes>
+      
 
-      <Route path='/payment' element={<Payment />}></Route>
-
-     <Route path='Header' element={<Header />}> </Route>
-
-
-      <Route path='/Login' element={<Login />}></Route>
-
-
-      <Route path='/Pin' element={<Pin />}>
-      </Route>
-
-     <Route path='/Create' element={<Create />}>
-     </Route>
-
-     <Route path='/ElectricityPlan' element={<ElectricityPlan />}>
-      </Route>
-    
-     
-      </Routes>
-     
-
-    </Router>
+      </Router>
     </div>
   );
 }

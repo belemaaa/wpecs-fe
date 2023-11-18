@@ -1,51 +1,51 @@
 body {
     width: 100%;
     height: auto;
-    background-color: #feefe5;
+    background-color: #FFFDD0;
     font-family: 'Poppins', sans-serif;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-.LandingPage {
-    margin: auto;
-    /* text-align: center; */
-}
-
 .landinginfo {
-    width: 97vw;
     height: 11vh;
-    /* margin-bottom: 5vh; */
     padding-left: 3vw;
-    color: white;
-    /* background-color:  #1db954; */
-    background-color: teal;
-    /* background-image: url('../images/t7.jpg'); */
-    color: white;
-
-
-
+    color: teal;
+    font-size: larger;
+    border-bottom: 1px solid;
+    border-color: rgb(200, 200, 200);
+    margin-left: 40px;
+    margin-right: 40px;
 }
-
-.holster {
-    width: 100vw;
-    height: auto;
-    margin: auto;
-    object-fit: fill;
-    background-image: url('../images/nobg.png');
+.holster{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+.holster img{
     background-repeat: no-repeat;
-
-}
-
-.holster h1{
+    height: 600px;
     float: right;
-    margin-right: 6vw;
-    
+    background-color: #FFFDD0;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-
+.holster h1{
+    z-index: 10;  
+    float: left;
+    max-width: 550px;
+    font-size: 80px;
+    color: black;
+    font-weight: 600;
+}
 .buttonHolder {
     width: 20vw;
     height: auto;
-    /* background-color: white; */
     margin: auto;
     display: flex;
 }
@@ -57,43 +57,7 @@ body {
     border-radius: 10vw;
     border: none;
     font-size: 3vh;
-    margin: auto;
     color: white;
-    margin-top: 15vh;
+    margin-left: -400px;
+    margin-top: -35px;
 }
-
-.moreInfo {
-    width: 80vw;
-    height: 60vh;
-    /* background-color: red; */
-    margin: auto;
-    /* background-image: url('../images/t4.jpg'); */
-    object-fit: contain;
-    box-sizing: border-box;
-}
-
-/* .persons{
-    width: 90vw;
-    height: auto;
-    padding-bottom: 5vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.personholder {
-    width: 15vw;
-    height: 30vh;
-    padding: 3vh;
-    border-radius: 1vw;
-    background-color: teal;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    transition: .3s ease-out;
-    color: white;
-
-}
-
-.personholder:hover{
-    width: 18vw;
-    height: 32vh;
-    transition: .3s ease-out;
-} */

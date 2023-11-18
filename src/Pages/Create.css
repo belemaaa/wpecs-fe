@@ -8,8 +8,9 @@
 }
 .section1{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
@@ -20,12 +21,14 @@
     display: flex;
     font-size: 20px;
     margin-bottom: 35px;
+    color: teal;
 }
 .form2{
     width: 40vw;
     padding-bottom: 8vh;
     height: auto;
     margin: auto;
+    padding-top: 60px;
     text-align: center;
     align-content: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;

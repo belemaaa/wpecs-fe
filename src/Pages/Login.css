@@ -1,8 +1,6 @@
 .formHolder{
     width: 75vw;
-    height: 90vh;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 .section2{
@@ -15,8 +13,8 @@
 
 .formm{
     margin: auto;
-    height: 50vh;
-    width: 30vw;
+    height: auto;
+    width: 35vw;
     padding-top: 4vh;
     box-sizing: border-box;
     align-content: center;
@@ -25,12 +23,13 @@
 }
 .formm input{
     margin: auto;
-    width: 15vw;
+    width: 20vw;
     height: 6vh;
-    border-radius: 2vh;
-    border: 1px white;
-    padding-left: 4vh;
+    border-radius: 10px;
+    border: 1px solid teal;
+    padding: 10px;
     box-sizing: border-box;
+    color: black;
 }
 .formm label{
     margin: auto;
@@ -47,6 +46,15 @@
     font-size: 2vh;
     text-decoration: solid;
     color: white;
+}
+.formm button:hover{
+    width: 8vw;
+    height: 5.5vh;
+    transition: .3s ease-out;
+    background-color: white;
+    color: teal;
+    outline: solid teal 2px;
+
 }
 .warning{
     color: red;

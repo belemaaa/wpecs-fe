@@ -11,33 +11,29 @@ const Create = () => {
     const [phone_number, setPhone_number] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate()
-    const [error_message, setError_message] = useState('')
 
     const handleSubmit = async (e) => {
       e.preventDefault();
       const headers = {
           'Content-Type': 'application/json'
       }
-      try{
-        const response = await fetch('http://127.0.0.1/api/signup', {
-            method: 'POST',
-            headers: headers,
-            body: JSON.stringify({
-              first_name: first_name,
-              last_name: last_name,
-              username: username,
-              password: password,
-              email: email,
-              phone_number: phone_number
-            }),
-        })
+      try {
+        const response = await axios.post('http://127.0.0.1:8000/api/signup/', {
+          first_name: first_name,
+          last_name: last_name,
+          username: username,
+          email: email,
+          phone_number: phone_number,
+          password: password,
+        }, {
+          headers: headers
+        });
         if (response.status === 200){
-            console.log('signup was successful')
-            navigate('/Login')
+          console.log('signup was successful')
+          navigate('/Login')
         }
-      }catch(error){
-          console.error('errors: ', error)
-          setError_message('An error occurred. Please try again later.')
+      } catch(error){
+        console.error('Error received: ', error)
       }
     }
   return (
@@ -45,7 +41,7 @@ const Create = () => {
       <section className='section2'>
         <div className='formHolder'>
             <h1 className='welcome'>Signup</h1>
-            <form  className='formm' onSubmit={handleSubmit}> 
+            <form  className='formm' method='POST' onSubmit={handleSubmit}> 
               <svg className='svg1' xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><br></br>
 
                 <label>First name</label><br></br>
@@ -55,6 +51,11 @@ const Create = () => {
 
                 <label>Last name</label><br></br>
                 <input placeholder='Input your last name' type='text' value={last_name} onChange={(e) => setLast_name(e.target.value)} >
+                </input>
+                <br/><br/>
+
+                <label>Username</label><br></br>
+                <input placeholder='Input your last name' type='text' value={username} onChange={(e) => setUsername(e.target.value)} >
                 </input>
                 <br/><br/>
 
@@ -72,7 +73,7 @@ const Create = () => {
                 <input placeholder= 'Input your password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} >
                 </input>
                 <br/><br/>
-                <button type='submit'><p>Create account</p></button>
+                <button type='submit'>Create account</button>
                 <p className='last1'>Not a new user?<Link to='/Login'> Login</Link> </p>
             </form> 
             

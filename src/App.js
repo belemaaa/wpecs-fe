@@ -15,12 +15,12 @@ function App() {
       <Router>    
         <Routes>
           <Route path='/' element= {<LandingPage/>}></Route>
-          <Route path='/dash' element={<Home />}></Route> 
+          <Route path='/home' element={<Home />}></Route> 
           <Route path='/payment' element={<Payment />}></Route>
           <Route path='Header' element={<Header />}> </Route>
           <Route path='/Login' element={<Login />}></Route>
           <Route path='/Pin' element={<Pin />}></Route>
-          <Route path='/Create' element={<Create />}></Route>
+          <Route path='/Signup' element={<Create />}></Route>
           <Route path='/ElectricityPlan' element={<ElectricityPlan />}></Route>
           </Routes>
       

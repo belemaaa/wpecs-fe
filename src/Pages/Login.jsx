@@ -55,7 +55,6 @@ const Login = () => {
                 </input>
                 <p className='warning'>{}</p>
                 <button type='submit'>Login</button>
-                {/* <p>Input your email and password to sign into your account.</p> */}
                 <p className='last1'>Don't have an account?<Link to='/Create'> Signup</Link> </p>
             </form> 
            
